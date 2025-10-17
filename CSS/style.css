@@ -24,6 +24,7 @@ header span{
 }
 
 main{
+  
   display: flex;
   flex-direction: column;
   flex-grow: 1;
@@ -31,7 +32,7 @@ main{
 
 .sombra{
     position: absolute;
-    font-size: 500px;
+    font-size: 28vw;
     color: #ffffff55;
     z-index: -999;
     top: 50%;
@@ -44,7 +45,7 @@ h1{
     justify-content: center;
     align-items: center;
     flex-grow: 1;
-    font-size: 300px;
+    font-size: 22vw;
     color: white;
 }
 
@@ -89,4 +90,37 @@ h1{
 footer{
     text-align: center;
     color: var(--secundary-color);
+}
+
+@media (max-width: 1024px){
+    body{
+        padding: 30px;
+    }
+    footer{
+        display: none;
+    }
+    .sombra{
+        transform: translate(-50%, -180%);
+       }
+   h1{
+    transform: translate(0, -30%);
+   }
+   .container{
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 0;
+    gap: 10px;
+   }
+   .explicacao p{
+    text-align: center;
+   }
+   .pikachu{
+    transform: translate(-45%, -50%);
+}
+
+
+@media (max-width: 480px){
+
+
 }
