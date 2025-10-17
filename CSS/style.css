@@ -57,6 +57,9 @@ h1{
     padding-bottom: 64px;
 }
 
+.explicacao{
+    z-index: 1;
+}
 .explicacao h2{
     font-size: 64px;
     color: var(--secundary-color);
@@ -79,6 +82,7 @@ h1{
     color: white;
 }
 
+
 .pikachu{
     position: absolute;
     top: 50%;
@@ -93,6 +97,7 @@ footer{
 }
 
 @media (max-width: 1024px){
+
     body{
         padding: 30px;
     }
@@ -118,9 +123,25 @@ footer{
    .pikachu{
     transform: translate(-45%, -50%);
 }
-
-
+}
+    
 @media (max-width: 480px){
-
-
+    .explicacao p{
+        display: none;
+    }
+    .pikachu{
+        height: 50vh;
+    }
+    .sombra{
+        transform: translate(-50%, -220%);
+    }
+    h1{
+        transform: translate(0, -22%);
+    }
+    .explicacao h2{
+        font-size: 38px;
+    }
+    .container a{
+        width: 100%;
+    } 
 }
